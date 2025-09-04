@@ -37,7 +37,7 @@ const page = () => {
     <div className="flex flex-col items-center w-full text-white px-4">{/* Intro Section */}
       <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12 py-8 md:py-16 bg-black border-2 border-white rounded-3xl shadow-lg mt-8 max-w-6xl mx-auto">
         <div className="w-64 md:w-72 h-72 md:h-80 rounded-2xl overflow-hidden shadow-xl flex-shrink-0">
-          <Image src="/background/bg.svg" alt="Profile" className="object-cover w-full h-full" />
+          <Image src="/background/bg.svg" alt="Profile" className="object-cover w-full h-full" width={192} height={192} />
         </div>
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-xl px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">Hello, I&apos;m Ayush!</h1>
@@ -73,7 +73,7 @@ const page = () => {
         <div className="flex flex-wrap gap-4 md:gap-8 justify-center">
           {cats.map((cat) => (
             <div key={cat.name} className="bg-[#232324] rounded-2xl shadow-lg p-3 md:p-4 w-52 md:w-64 flex flex-col items-center">
-              <Image src={cat.img} alt={cat.name} className="w-40 md:w-48 h-full object-cover rounded-xl mb-3" />
+              <Image src={cat.img} alt={cat.name} className="w-40 md:w-48 h-full object-cover rounded-xl mb-3" width={192} height={192}/>
               <h3 className="text-lg md:text-xl font-semibold mb-1 text-center">{cat.name}</h3>
             </div>
           ))}
@@ -92,7 +92,7 @@ const page = () => {
         <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
           {books.map((book) => (
             <div key={book.title} className="w-24 h-36 md:w-28 md:h-44 bg-[#232324] rounded-xl shadow flex flex-col items-center justify-end overflow-hidden">
-              <Image src={book.img} alt={book.title} className="w-full h-full object-cover rounded-xl" />
+              <Image src={book.img} alt={book.title} className="w-full h-full object-cover rounded-xl" width={192} height={192}/>
               <p className="text-gray-300 text-xs md:text-sm text-center px-1 py-1">{book.title}</p>
             </div>
           ))}
