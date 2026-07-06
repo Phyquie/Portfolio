@@ -1,5 +1,38 @@
 
+import type { Metadata } from "next";
 import { FaEnvelope, FaLinkedin, FaGithub, FaSuitcase, FaGraduationCap, FaCode } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Ayush Bisht - Contact Details",
+  },
+  description:
+    "Contact Ayush Bisht for opportunities, collaboration, email, GitHub, and LinkedIn details.",
+  keywords: [
+    "Ayush Bisht contact",
+    "Ayush Bisht details",
+    "Ayush Bisht email",
+    "Ayush Bisht LinkedIn",
+    "Ayush Bisht GitHub",
+  ],
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Ayush Bisht - Contact Details",
+    description:
+      "Contact Ayush Bisht for opportunities, collaboration, email, GitHub, and LinkedIn details.",
+    url: "/contact",
+    siteName: "Ayush Bisht",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Ayush Bisht - Contact Details",
+    description:
+      "Contact Ayush Bisht for opportunities, collaboration, email, GitHub, and LinkedIn details.",
+  },
+};
 
 const contactInfo = [
   {
@@ -15,7 +48,7 @@ const contactInfo = [
 
 const availability = [
   {
-    icon: <FaSuitcase className="text-2xl text-white" />, label: "Internship Availability", value: "All 2026 (June - December)", status: "AVAILABLE", color: "bg-green-600"
+    icon: <FaSuitcase className="text-2xl text-white" />, label: "Open to Opportunities", value: "All 2026", status: "AVAILABLE", color: "bg-green-600"
   },
   {
     icon: <FaGraduationCap className="text-2xl text-white" />, label: "Graduation", value: "Expected June 2026", status: "ON TRACK", color: "bg-green-700"

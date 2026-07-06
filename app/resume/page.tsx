@@ -184,7 +184,23 @@ const ResumePage = () => {
         <div ref={experienceRef} id="experience" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Relevant Experience</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Example Experience Card 1 */}
+             <div className="bg-[#18191c] rounded-2xl p-6 border border-gray-700 relative">
+              <div className="flex justify-between items-center mb-2">
+                <div>
+                  <div className="text-2xl font-bold">Full Stack Intern</div>
+                  <div className="font-semibold text-gray-300">Six.ind.in</div>
+                </div>
+                <span className="bg-white text-black px-3 py-1 rounded-lg text-xs font-bold">Completed</span>
+              </div>
+              <div className="text-gray-400 mb-2">Oct 2025 – Mar 2026</div>
+              <ul className="list-disc ml-6 text-gray-200">
+                <li> Helped in improving SEO performance for six.ind.in, helping multiple used-vehicle pages rank in the Top 10 across India through optimized metadata, structured data, and crawl efficiency.</li>
+                <li> Developing and maintaining core frontend features for the Doctar.in platform (healthcare booking system) using Next.js and TypeScript.</li>
+                <li>Lead SEO implementation for Doctar.in, including keyword research, schema markup, canonical optimization,
+dynamic sitemaps, and technical on-page fixes.</li>
+              </ul>
+            </div>
+        
             <div className="bg-[#18191c] rounded-2xl p-6 border border-gray-700 relative">
               <div className="flex justify-between items-center mb-2">
                 <div>
@@ -201,7 +217,7 @@ const ResumePage = () => {
                 <li>Integrated RESTful APIs with efficient client-side state management using TanStack Query.</li>
               </ul>
             </div>
-            {/* Example Experience Card 2 */}
+
             <div className="bg-[#18191c] rounded-2xl p-6 border border-gray-700 relative">
               <div className="flex justify-between items-center mb-2">
                 <div>
@@ -218,6 +234,8 @@ const ResumePage = () => {
                 <li>Deployed full-stack solutions to cloud platforms like Vercel and Render, configuring CI/CD pipelines.</li>
               </ul>
             </div>
+           
+          
           </div>
         </div>
 

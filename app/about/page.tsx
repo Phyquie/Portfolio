@@ -1,8 +1,40 @@
-'use client'
+import type { Metadata } from "next";
 
 import {  FaSnapchat, FaInstagram } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Ayush Bisht - Hobbies and About Him",
+  },
+  description:
+    "Learn about Ayush Bisht, his hobbies, anime interests, reading habits, and what he enjoys outside development.",
+  keywords: [
+    "Ayush Bisht about",
+    "Ayush Bisht hobbies",
+    "Ayush Bisht anime",
+    "Ayush Bisht reading",
+    "Ayush Bisht developer",
+  ],
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "Ayush Bisht - Hobbies and About Him",
+    description:
+      "Learn about Ayush Bisht, his hobbies, anime interests, reading habits, and what he enjoys outside development.",
+    url: "/about",
+    siteName: "Ayush Bisht",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Ayush Bisht - Hobbies and About Him",
+    description:
+      "Learn about Ayush Bisht, his hobbies, anime interests, reading habits, and what he enjoys outside development.",
+  },
+};
 
 
 const cats = [

@@ -102,6 +102,8 @@ const Page = () => {
               <Image
                 src={projects[activeIndex].image}
                 alt={projects[activeIndex].title}
+                 width={1200}
+  height={675}
                 className="object-fit rounded-xl"
               />
             </motion.div>
